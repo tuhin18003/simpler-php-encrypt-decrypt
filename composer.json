@@ -1,0 +1,21 @@
+{
+    "name": "tuhin18003/simpler-php-encrypt-decrypt",
+    "description": "Very handy and simpler PHP Encryption and Decryption ",
+    "type": "library",
+    "homepage": "https://github.com/tuhin18003/simpler-php-encrypt-decrypt",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "M.Tuhin",
+            "email": "info@codesolz.net"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tuhin18003\\SimPhpEnDecrypt\\": "src/"
+        }
+    }
+}
