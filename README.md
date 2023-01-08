@@ -9,7 +9,7 @@ Very handy and simpler PHP Encryption and Decryption
 Via Composer
 
 ``` bash
-$ composer require simpler-php-encrypt-decrypt
+$ composer require tuhin18003/simpler-php-encrypt-decrypt
 ```
 
 ## Usage
