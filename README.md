@@ -22,7 +22,7 @@ require './vendor/autoload.php';
 ## Encryption
 
 ```
-use Tuhin18003\SimPhpEnDecrypt\Builder
+use Tuhin18003\SimPhpEnDecrypt\Builder;
 
 $encryption = Builder::encrypt('test');
 
@@ -39,7 +39,7 @@ Array ( [cipher] => SWlPb2ZQN1ZDRlJXb2JwRXdOVmtmZz09 [key] => MTk2OGEyOTdlE0M2Rk
 ## Decryption
 
 ```
-use Tuhin18003\SimPhpEnDecrypt\Builder
+use Tuhin18003\SimPhpEnDecrypt\Builder;
 
 Builder::decrypt( $encryption['cipher'], $encryption['key'] );
 
@@ -61,7 +61,7 @@ Get the encrypted and decrypted string without handling the Cipher and Key
 You can use your own joiner in advance or leave the second parameter of the function blank. This will make your string more secure.
 
 ```
-use Tuhin18003\SimPhpEnDecrypt\Builder
+use Tuhin18003\SimPhpEnDecrypt\Builder;
 
 $encryptedToken = Builder::getEncryptedToken('test', "__");
 
@@ -70,7 +70,7 @@ $encryptedToken = Builder::getEncryptedToken('test', "__");
 Without joiner:
 
 ```
-use Tuhin18003\SimPhpEnDecrypt\Builder
+use Tuhin18003\SimPhpEnDecrypt\Builder;
 
 $encryption = Builder::getEncryptedToken('test');
 
@@ -89,7 +89,7 @@ aDhaRFZjK2Z1WWlQa1NkSnRINXJMaE85TnhBT2tTQWxTaDJ1eHdmeVl3MD0=__MjkyMjA4MzBhYWZkY2
 if you have used your custom joiner, please use it here again
 
 ```
-use Tuhin18003\SimPhpEnDecrypt\Builder
+use Tuhin18003\SimPhpEnDecrypt\Builder;
 
 Builder::getDecryptedToken( $encryptedToken, "__");
 
@@ -98,7 +98,7 @@ Builder::getDecryptedToken( $encryptedToken, "__");
 Or keep blank the second parameter
 
 ```
-use Tuhin18003\SimPhpEnDecrypt\Builder
+use Tuhin18003\SimPhpEnDecrypt\Builder;
 
 Builder::getDecryptedToken( $encryptedToken );
 
