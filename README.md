@@ -53,6 +53,66 @@ test
 
 ```
 
+### Production - Different approach
+Get the encrypted and decrypted string without handling the Cipher and Key
+
+## Encryption
+
+You can use your own joiner in advance or leave the second parameter of the function blank. This will make your string more secure.
+
+```
+use Tuhin18003\SimPhpEnDecrypt\Builder
+
+$encryptedToken = Builder::getEncryptedToken('test', "__");
+
+```
+
+Without joiner:
+
+```
+use Tuhin18003\SimPhpEnDecrypt\Builder
+
+$encryption = Builder::getEncryptedToken('test');
+
+```
+
+## Output 
+It returns a encrypted token
+
+```
+aDhaRFZjK2Z1WWlQa1NkSnRINXJMaE85TnhBT2tTQWxTaDJ1eHdmeVl3MD0=__MjkyMjA4MzBhYWZkY2YyNjYyYzU0YWQ2Y2VkMjJkZjI0YTcyMGFjM2QxMDdhZTc3NzA2MGFjOGRhZDA3MTc0OV9fX2Q2NzEwNzc0OWE0MmU4NDI=
+
+```
+
+## Decryption
+
+if you have used your custom joiner, please use it here again
+
+```
+use Tuhin18003\SimPhpEnDecrypt\Builder
+
+Builder::getDecryptedToken( $encryptedToken, "__");
+
+```
+
+Or keep blank the second parameter
+
+```
+use Tuhin18003\SimPhpEnDecrypt\Builder
+
+Builder::getDecryptedToken( $encryptedToken );
+
+```
+
+## Output
+It returns the original string
+
+```
+test
+
+```
+
+
 
 ### Credentials
 - *Created by - [M.Tuhin](https://codesolz.net/)*

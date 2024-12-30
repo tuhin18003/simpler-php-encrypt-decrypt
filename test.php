@@ -3,10 +3,18 @@ require_once './vendor/autoload.php';
 
 use Tuhin18003\SimPhpEnDecrypt\Builder;
 
-$res = Builder::encrypt('test sdfsdf');
+$string = "Simpler PHP Encrypt & Decrypt";
 
-print_r( $res );
+$res = Builder::encrypt( $string );
 
-echo Builder::decrypt( $res['cipher'], $res['key'] );
+// print_r( $res );
+
+// echo Builder::decrypt( $res['cipher'], $res['key'] );
+
+echo $encryptedToken = Builder::getEncryptedToken( $string );
+echo "<br>";
+echo Builder::getDecryptedToken( $encryptedToken );
+
+
 
 ?>
