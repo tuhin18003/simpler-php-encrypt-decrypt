@@ -118,6 +118,6 @@ test
 - *Created by - [M.Tuhin](https://codesolz.net/)*
 
 <a href="https://codesolz.net">
-  <img src="https://static.codesolz.net/cs/codesolz-footer-logo.webp" alt="codesolz.net"/>
+  <img src="https://static.codesolz.net/cs/logo.webp" alt="codesolz.net"/>
 </a>
 
